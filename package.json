@@ -6,7 +6,9 @@
   "homepage": "https://ViktoriiaPavlenko.github.io/goit-js-hw-13-image-finder",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
+    "gh-pages": "^3.2.3",
     "handlebars": "^4.7.7",
     "lodash.debounce": "^4.0.8",
     "material-design-icons": "^3.0.1"
